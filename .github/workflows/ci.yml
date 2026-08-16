@@ -1,0 +1,27 @@
+name: CGPS checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch==2.5.0
+          python -m pip install numpy==1.26.4 pytest==8.3.2 ruff==0.6.9
+          python -m pip install --no-deps -e .
+      - name: Static checks
+        run: |
+          python -m compileall -q src scripts/evaluate.py
+          ruff check src tests scripts/evaluate.py
+      - name: Unit tests
+        run: python -m pytest tests

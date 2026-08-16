@@ -1,0 +1,27 @@
+protocol: cgps_main_table
+seed: 42
+backbone: ViT-B/16
+batch_size: 1
+datasets:
+  - fgvc
+  - caltech101
+  - stanford_cars
+  - dtd
+  - eurosat
+  - oxford_flowers
+  - food101
+  - oxford_pets
+  - sun397
+  - ucf101
+cgps:
+  confidence_threshold: 0.30
+  trigger_fraction: 0.25
+  selection_fraction: 0.10
+  min_consensus_count: 5
+metrics:
+  - top1_accuracy
+result_keys:
+  dota_baseline: dota_official
+  dota_cgps: refine_hc
+  tda_baseline: tda_baseline
+  tda_cgps: tda_refine_hc

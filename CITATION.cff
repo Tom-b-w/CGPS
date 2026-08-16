@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use CGPS, please cite the accompanying paper."
+title: "CGPS: Consensus-Guided Prompt Selection"
+type: software
+version: 1.0.0
+date-released: 2026-08-16
+authors:
+  - family-names: Tan
+    given-names: Bowen
+  - family-names: Liu
+    given-names: Tie
+  - family-names: Yang
+    given-names: Yue
+  - family-names: Zhao
+    given-names: Qijun
+preferred-citation:
+  type: conference-paper
+  title: "Consensus-Guided Prompt Selection for Test-Time Adaptation of Vision-Language Models"
+  authors:
+    - family-names: Tan
+      given-names: Bowen
+    - family-names: Liu
+      given-names: Tie
+    - family-names: Yang
+      given-names: Yue
+    - family-names: Zhao
+      given-names: Qijun
+  year: 2026
