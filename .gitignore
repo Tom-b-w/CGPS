@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Environments and editors
+.venv/
+cgps_env/
+.idea/
+.vscode/
+
+# Local data, weights, caches, and experiment products
+data/
+models/
+cache/
+outputs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# OS and notebook noise
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
