@@ -4,8 +4,6 @@
 
 ### Test-Time Adaptation of Vision-Language Models
 
-Bowen Tan · Tie Liu · Yue Yang · Qijun Zhao
-
 [![CI](https://github.com/Tom-b-w/CGPS/actions/workflows/ci.yml/badge.svg)](https://github.com/Tom-b-w/CGPS/actions/workflows/ci.yml)
 
 </div>
@@ -127,11 +125,6 @@ rerun has not been performed during repository cleanup. Details are recorded in
 The evaluator includes DOTA source code and ReTA prompt resources with retained
 license notices and recorded upstream commits. See
 [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) before redistribution.
-
-## Citation
-
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Final venue and
-proceedings fields can be added when they are available.
 
 ## License
 
