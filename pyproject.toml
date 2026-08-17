@@ -9,12 +9,6 @@ description = "Reproducible research code for Consensus-Guided Prompt Selection"
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
 license = {file = "LICENSE"}
-authors = [
-  {name = "Bowen Tan"},
-  {name = "Tie Liu"},
-  {name = "Yue Yang"},
-  {name = "Qijun Zhao"},
-]
 dependencies = [
   "numpy>=1.24,<2",
   "scipy>=1.10,<2",
